@@ -7,7 +7,10 @@ while n % 2 == 0:
         n /= 2
         potenca += 1
 skupaj = 2 ** potenca
-print("2^" + str(potenca), end='*')
+if potenca == 1:
+    print("2", end='*')
+elif potenca > 1:
+    print("2^" + str(potenca), end='*')
 relevantPrastevila = [2]
 while True:
     i = 1
